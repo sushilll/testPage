@@ -1,4 +1,5 @@
-body:before {
+/* fixed background */
+/* body:before {
   content: "";
   display: block;
   position: fixed;
@@ -12,7 +13,7 @@ body:before {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+} */
 body {
     margin: 0;
     padding: 0;
@@ -26,8 +27,10 @@ body {
 #banner {
     text-align: center;
     color: #ffffff;
+    display: block;
+    z-index: -10;
     /*padding: 15%;*/
-/*     background-image: url("../images/overlay.png"), url("../images/crowd.jpg"); */
+    background-image: url("../images/overlay.png"), url("../images/crowd.jpg");
     background-position: top left,						center center;
     background-repeat: repeat,							no-repeat;
     background-size: auto,							cover;
